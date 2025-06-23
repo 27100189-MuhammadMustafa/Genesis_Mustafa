@@ -3,6 +3,7 @@ const app = express();
 
 // Built-in middleware
 app.use(express.json());
+app.use(express.urlencoded({ extended: true })); // for form submissions
 
 
 app.use((req, res, next) => {
